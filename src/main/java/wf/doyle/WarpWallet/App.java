@@ -71,7 +71,7 @@ public class App {
         f.setAccessible(true);
         System.out.println("I'm using " + (f.getBoolean(null) ? "native libs" : "java libs") + " for Scrypt.");
 
-        final Random random = new Random(); // hopefully more randomness given to us by the OS.
+         final SecureRandom random = new SecureRandom(); // hopefully more randomness given to us by the OS.
 
         final int length = Integer.parseInt(args[2]);
 
